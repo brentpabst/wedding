@@ -21,9 +21,11 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function (sy
         dialog: true,
         widget: true
     });
-
-    app.start().then(function () {
-        viewLocator.useConvention();
-        app.setRoot('viewmodels/shell', 'entrance');
-    });
+    
+    setTimeout(function () {
+        app.start().then(function () {
+            viewLocator.useConvention();
+            app.setRoot('viewmodels/shell', 'entrance');
+        });
+    }, 5000);
 })
