@@ -27,5 +27,5 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function (sy
             viewLocator.useConvention();
             app.setRoot('viewmodels/shell', 'entrance');
         });
-    }, 5000);
+    }, 0);
 })
