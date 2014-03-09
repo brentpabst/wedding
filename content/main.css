@@ -18,6 +18,9 @@
 @text-color-opposite: #FFFFFF;
 @text-color-light: #444444;*/
 
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900italic);
+
 html {
     -moz-user-select: none;
     -ms-user-select: none;
@@ -49,6 +52,10 @@ h3 {
     font-weight: normal;
 }
 
+a.navbar-brand {
+    font-family: 'Alex Brush', cursive;
+}
+
 #splash .cupid {
     padding-bottom: 20px;
 }
@@ -59,9 +66,72 @@ h3 {
     padding: 15px;
 }
 
+.home-cover {
+    float: left;
+    position: relative;
+}
+
+.home-text {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    right: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+div.home-names {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    right: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.home-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 64px;
+    color: white;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.50);
+}
+
+.home-caption {
+    font-size: 36px;
+    color: white;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.50);
+}
+
+span.home-names {
+    font-family: 'Alex Brush', cursive;
+    font-size: 90px;
+    color: white;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.85);
+}
+
 @media(max-width: 480px) {
     #splash .cupid {
         width: auto;
         height: 100px;
+    }
+
+    .home-text {
+        top: 2%;
+    }
+
+    .home-title {
+        font-size: 20px;
+        text-shadow: 2px 1px 0 rgba(0,0,0,0.50);
+    }
+
+    .home-caption {
+        font-size: 15px;
+        text-shadow: 2px 1px 0 rgba(0,0,0,0.50);
+    }
+
+    span.home-names {
+        visibility: hidden;
     }
 }
