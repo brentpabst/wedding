@@ -69,23 +69,26 @@ a.navbar-brand {
 .home-cover {
     float: left;
     position: relative;
+    width: 100%;
 }
 
 .home-text {
     position: absolute;
-    top: 10%;
-    left: 1%;
-    right: 1%;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    padding-top: 5%;
     text-align: center;
 }
 
 div.home-names {
     position: absolute;
-    bottom: 2%;
-    left: 1%;
-    right: 1%;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    padding-top: 53%;
     text-align: center;
 }
 
