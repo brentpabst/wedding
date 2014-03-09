@@ -10,9 +10,10 @@
             <a class="navbar-brand" href="/">Brenton & Alana</a>
         </div>
         <div class="collapse navbar-collapse" id="ba-nav-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Welcome</a></li>
-                <li><a href="#">Our Story</a></li>
+            <ul class="nav navbar-nav" data-bind="foreach: router.navigationModel">
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash }, html: title"></a>
+                </li>
             </ul>
         </div>
     </div>
