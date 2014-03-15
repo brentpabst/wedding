@@ -21,7 +21,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function (sy
         dialog: true,
         widget: true
     });
-    
+
     setTimeout(function () {
         app.start().then(function () {
             viewLocator.useConvention();
