@@ -7,7 +7,8 @@
                 { route: '500', title: 'Server Error', moduleId: 'viewmodels/500', nav: false },
                 { route: '403', title: 'Access Denied', moduleId: 'viewmodels/403', nav: false },
                 { route: '', title: 'Welcome', moduleId: 'viewmodels/home', nav: true },
-                { route: 'story', title: 'Our Story', moduleId: 'viewmodels/about', nav: true }
+                { route: 'story', title: 'Our Story', moduleId: 'viewmodels/about', nav: true },
+                { route: 'venues', title: 'Ceremony & Reception', moduleId: 'viewmodels/venues', nav: true }
                 //{ route: 'contact', title: 'Contact', moduleId: 'viewmodels/contact', nav: true }
             ]).buildNavigationModel()
               .mapUnknownRoutes('viewmodels/404', '404')
@@ -22,3 +23,7 @@
         }
     };
 });
+
+// TODO: These are ideas we might want to look at...
+// Using this sample demo site for content: http://demo.wedshare.com/
+// Cool HTML5 mapping mechanism: http://www.developerdrive.com/2013/07/html5-geo-location-api-and-google-maps-api/
