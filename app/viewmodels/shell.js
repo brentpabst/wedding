@@ -12,6 +12,13 @@
             ]).buildNavigationModel()
               .mapUnknownRoutes('viewmodels/404', '404')
               .activate();
+        },
+        menuClick: function () {
+            // Close bootstrap's dropdown menu after clicking
+            var menu = $('.navbar-collapse');
+            menu.animate({ 'height': '1px' }, function () {
+                menu.removeClass('in').addClass('collapse');
+            });
         }
     };
 });
