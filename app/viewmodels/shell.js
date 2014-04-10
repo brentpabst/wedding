@@ -3,6 +3,10 @@
         year: moment().utc().year(),
         router: router,
         activate: function () {
+            router.on('router:navigation:complete', function () {
+                ga('send', { 'hitType': 'pageview', 'page': this.activeInstruction().config.hash });
+            });
+
             router.map([
                 { route: '500', title: 'Server Error', moduleId: 'viewmodels/500', nav: false },
                 { route: '403', title: 'Access Denied', moduleId: 'viewmodels/403', nav: false },
