@@ -65,7 +65,7 @@
                 (i[r].q = i[r].q || []).push(arguments);
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;
             m.parentNode.insertBefore(a, m);
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
@@ -75,6 +75,9 @@
     <script src="scripts/require.js" data-main="app/main"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-532ce1e252f5d44d"></script>
     <script type="text/javascript">
+        var addthis_config = {
+            data_track_clickback: false
+        };
         addthis.layers({
             'theme': 'transparent',
             'share': {
