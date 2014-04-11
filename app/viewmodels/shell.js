@@ -14,7 +14,8 @@
                 { route: '403', title: 'Access Denied', moduleId: 'viewmodels/403', nav: false },
                 { route: '', title: 'Welcome', moduleId: 'viewmodels/home', nav: true },
                 { route: 'story', title: 'Our Story', moduleId: 'viewmodels/about', nav: true },
-                { route: 'venues', title: 'Ceremony & Reception', moduleId: 'viewmodels/venues', nav: true }
+                { route: 'venues', title: 'Ceremony & Reception', moduleId: 'viewmodels/venues', nav: true },
+                { route: 'guests', title: 'Guest Information', moduleId: 'viewmodels/guests', nav: false }
                 //{ route: 'contact', title: 'Contact', moduleId: 'viewmodels/contact', nav: true }
             ]).buildNavigationModel()
               .mapUnknownRoutes('viewmodels/404', '404')
