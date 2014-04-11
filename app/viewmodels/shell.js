@@ -1,6 +1,8 @@
 ﻿define(['plugins/router', 'durandal/app'], function (router, app) {
     return {
         year: moment().utc().year(),
+        daysToGo: 'Married ' + moment('2015-09-26 20:25:00 Z').fromNow(),
+        lessThanAYear: moment('2015-09-26 20:25:00 Z').diff(moment().utc(), 'days') <= 365,
         router: router,
         activate: function () {
             router.on('router:navigation:complete', function () {
