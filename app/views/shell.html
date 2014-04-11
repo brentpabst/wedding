@@ -14,6 +14,10 @@
                     <a data-bind="attr: { href: hash }, html: title, click: $root.menuClick()"></a>
                 </li>
             </ul>
+            <div class="nav navbar-nav navbar-right">
+                <p class="navbar-text" data-bind="text: daysToGo, visible: lessThanAYear"></p>
+                <p class="navbar-text" data-bind="visible: !lessThanAYear">September 26<sup>th</sup> 2015</p>
+            </div>
         </div>
     </div>
 </div>
