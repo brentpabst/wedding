@@ -15,6 +15,7 @@
                 { route: '', title: 'Welcome', moduleId: 'viewmodels/home', nav: true },
                 { route: 'story', title: 'Our Story', moduleId: 'viewmodels/about', nav: true },
                 { route: 'party', title: 'Wedding Party', moduleId: 'viewmodels/party', nav: false },
+                { route: 'registry', title: 'Registries', moduleId: 'viewmodels/registry', nav: false },
                 { route: 'venues', title: 'Ceremony & Reception', moduleId: 'viewmodels/venues', nav: true },
                 { route: 'guests', title: 'Guest Information', moduleId: 'viewmodels/guests', nav: false }
                 //{ route: 'contact', title: 'Contact', moduleId: 'viewmodels/contact', nav: true }
