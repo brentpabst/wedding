@@ -1,0 +1,140 @@
+﻿/*@font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+@font-family-light: "Segoe UI Light", "Segoe Light", "Segoe UI", "Helvetica-Light", Arial, Helvetica, sans-serif;
+@font-family-heavy: "Segoe UI SemiBold", "Segoe SemiBold", "Segoe UI", "Helvetica-Bold", Arial, Helvetica, sans-serif;
+
+@background-color: #FFFFFF;
+@background-color-opposite: #CCCCCC;
+@background-color-dark: #3C454F;
+@background-color-hover: #000000;
+@background-color-disabled: #31363B;
+
+@accent-normal: #57A0D3;
+@accent-hover: #82BEE9;
+@accent-pale: #C6E2FF;
+@accent-light: #DFEFFF;
+@accent-dark: #1C5C89;
+
+@text-color: #000000;
+@text-color-opposite: #FFFFFF;
+@text-color-light: #444444;*/
+
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900italic);
+
+html {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    cursor: default;
+    background-color: #C6E2FF;
+}
+
+h1 {
+    font-family: "Segoe UI Light", "Segoe Light", "Segoe UI", "Helvetica-Light", Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: "Segoe UI SemiBold", "Segoe SemiBold", "Segoe UI", "Helvetica-Bold", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+a.navbar-brand {
+    font-family: 'Alex Brush', cursive;
+}
+
+#splash .cupid {
+    padding-bottom: 20px;
+}
+
+.page {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.home-cover {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.home-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+div.home-names {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 53%;
+    text-align: center;
+}
+
+.home-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 64px;
+    color: white;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.50);
+}
+
+.home-caption {
+    font-size: 36px;
+    color: white;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.50);
+}
+
+span.home-names {
+    font-family: 'Alex Brush', cursive;
+    font-size: 90px;
+    color: white;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.85);
+}
+
+@media(max-width: 480px) {
+    #splash .cupid {
+        width: auto;
+        height: 100px;
+    }
+
+    .home-text {
+        top: 2%;
+    }
+
+    .home-title {
+        font-size: 20px;
+        text-shadow: 2px 1px 0 rgba(0,0,0,0.50);
+    }
+
+    .home-caption {
+        font-size: 15px;
+        text-shadow: 2px 1px 0 rgba(0,0,0,0.50);
+    }
+
+    span.home-names {
+        visibility: hidden;
+    }
+}
