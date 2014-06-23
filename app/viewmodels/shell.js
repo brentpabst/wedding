@@ -17,7 +17,7 @@
                 { route: 'party', title: 'Wedding Party', moduleId: 'viewmodels/party', nav: false },
                 { route: 'registry', title: 'Registries', moduleId: 'viewmodels/registry', nav: false },
                 { route: 'venues', title: 'Ceremony & Reception', moduleId: 'viewmodels/venues', nav: true },
-                { route: 'guests', title: 'Guest Information', moduleId: 'viewmodels/guests', nav: false }
+                { route: 'lodging', title: 'Lodging & Travel', moduleId: 'viewmodels/lodging', nav: true }
                 //{ route: 'contact', title: 'Contact', moduleId: 'viewmodels/contact', nav: true }
             ]).buildNavigationModel()
               .mapUnknownRoutes('viewmodels/404', '404')
