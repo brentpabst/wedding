@@ -14,7 +14,7 @@
                 { route: '403', title: 'Access Denied', moduleId: 'viewmodels/403', nav: false },
                 { route: '', title: 'Welcome', moduleId: 'viewmodels/home', nav: true },
                 { route: 'story', title: 'Our Story', moduleId: 'viewmodels/about', nav: true },
-                { route: 'party', title: 'Wedding Party', moduleId: 'viewmodels/party', nav: false },
+                { route: 'party', title: 'Wedding Party', moduleId: 'viewmodels/party', nav: true },
                 { route: 'registry', title: 'Registries', moduleId: 'viewmodels/registry', nav: true },
                 { route: 'venues', title: 'Ceremony & Reception', moduleId: 'viewmodels/venues', nav: true },
                 { route: 'lodging', title: 'Lodging & Travel', moduleId: 'viewmodels/lodging', nav: true }
