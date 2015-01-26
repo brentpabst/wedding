@@ -1,8 +1,7 @@
 ﻿define(['plugins/router', 'durandal/app'], function (router, app) {
     return {
         year: moment().utc().year(),
-        daysToGo: 'Married ' + moment('2015-09-26 20:25:00 Z').fromNow(),
-        lessThanAYear: moment('2015-09-26 20:25:00 Z').diff(moment().utc(), 'days') <= 365,
+        daysToGo: 'Married ' + moment('2015-09-26 20:20:00 Z').fromNow(),
         router: router,
         activate: function () {
             router.on('router:navigation:complete', function () {
@@ -12,7 +11,7 @@
             router.map([
                 { route: '500', title: 'Server Error', moduleId: 'viewmodels/500', nav: false },
                 { route: '403', title: 'Access Denied', moduleId: 'viewmodels/403', nav: false },
-                { route: '', title: 'Welcome', moduleId: 'viewmodels/home', nav: true },
+                { route: '', title: 'Welcome', moduleId: 'viewmodels/home', nav: false },
                 { route: 'story', title: 'Our Story', moduleId: 'viewmodels/about', nav: true },
                 { route: 'party', title: 'Wedding Party', moduleId: 'viewmodels/party', nav: true },
                 { route: 'registry', title: 'Registries', moduleId: 'viewmodels/registry', nav: true },
